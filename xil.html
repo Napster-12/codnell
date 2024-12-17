@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/fay.css">
+</head>
+<body>
+    <header>
+        <h1>-NAPSTER TECH-</h1>
+        <p>Your one-stop shop for electronics!</p>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/sec">Products</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <h3>Laptops</h3>
+    <section class="products">
+        <div class="product-card">
+            <img src="/static/images/huwei.jpg" alt="Laptop">
+            <h4>HUAWEI CORE I7 11th gen  <br> 16GB RAM 512GB SSD Intel iRISx Graphics</h4>
+            <p>R14 999.00</p>
+            <button onclick="addToCart('HUAWEI CORE I7 11th gen')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/static/images/hp intel.jpg" alt="Smartphone">
+            <h4>HP Intel celeron 11th gen <br> 4GB RAM 500GB HDD <br></h4>
+            <p>R4 999.00</p>
+            <button onclick="addToCart('iphone 13 pro max 128GB ')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/static/images/lenovo.jpg" alt="Headphones">
+            <h4>LENOVO CORE I7 11th gen <br> 8GB RAM 1TB HDD intel Graphics</h4>
+            <p>R12 999.00</p>
+            <button onclick="addToCart('LENOVO CORE I7 11TH GEN 8GB RAM 256 SSD')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/static/images/charger.jpg" alt="Smartwatch">
+            <h4>LAPTOP CHARGER</h4>
+            <p>R449.00</p>
+            <button onclick="addToCart('Laptop charger')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/static/images/lenovooo.jpg" alt="Headphones">
+            <h4>LENOVO CORE I5 11th gen <br> 8GB RAM 1TB HDD intel Graphics</h4>
+            <p>R12 999.00</p>
+            <button onclick="addToCart('LENOVO CORE I7 11TH GEN 8GB RAM 256 SSD')">Add to Cart</button>
+        </div>
+    </section>
+
+    <h3>smartphones</h3>
+    <section class="products">
+        <div class="product-card">
+            <img src="/static/images/iphone 12 mini.jpg" alt="Laptop">
+            <h4>iphone 12 mini(128GB)</h4>
+            <p>R10 999.00</p>
+            <button onclick="addToCart('HUAWEI CORE I7 11th gen')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/static/images/IPHONE.jpg" alt="Smartphone">
+            <h4>iphone 13 pro MAX(128GB)</h4>
+            <p>R16 499.00</p>
+            <button onclick="addToCart('iphone 13 pro max 128GB ')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/static/images/14 PRO.jpg" alt="Headphones">
+            <h4>iphone 14 PRO MAX(128GB)</h4>
+            <p>R30 999.00</p>
+            <button onclick="addToCart('IPHONE 14 PRO MAX')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/static/images/XR.jpg" alt="Smartwatch">
+            <h4>iphone xr(64GB)</h4>
+            <p>R5 999.00</p>
+            <button onclick="addToCart('IPHONE XR')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/static/images/11.jpg" alt="Smartwatch">
+            <h4>iphone 11(64GB)</h4>
+            <p>R7 499.00</p>
+            <button onclick="addToCart('IPHONE 11')">Add to Cart</button>
+            
+        </div>
+        <footer>
+            <p>&copy; 2024 Napster Tech | All Rights Reserved</p>
+        </footer>
+        
+        
+    </section>
+    
+
+    
+
+    <script>
+        const cart = [];
+
+        function addToCart(product) {
+            cart.push(product);
+            alert(product + " has been added to your cart!");
+        }
+
+        function viewCart() {
+            if (cart.length === 0) {
+                alert("Your cart is empty.");
+            } else {
+                alert("Items in your cart: \n" + cart.join(", "));
+            }
+        }
+    </script>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Napster Tech - Electronics Shop</title>
+    <link rel="stylesheet" href="/static/fay.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>-NAPSTER TECH-</h1>
+        <p>Your one-stop shop for electronics!</p>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/sec">Products</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section class="category">
+            <div class="category-item">
+                <h3>Laptops</h3>
+                <p>Browse our collection of laptops</p>
+            </div>
+            <div class="category-item">
+                <h3>Smartphones</h3>
+                <p>Find the latest smartphones</p>
+            </div>
+            <div class="category-item">
+                <h3>Accessories</h3>
+                <p>All the accessories you need</p>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="product-card">
+                <img src="/static/images/huwei.jpg" alt="Laptop">
+                <h4>HUAWEI CORE I7 11th gen</h4>
+                <p>R9 499.00</p>
+                <button onclick="addToCart('HUAWEI CORE I7 11th gen')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="/static/images/IPHONE.jpg" alt="Smartphone">
+                <h4>Iphone 13 pro MAX</h4>
+                <p>R17 499.00</p>
+                <button onclick="addToCart('iphone 13 pro max 128GB ')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="/static/images/lenovo.jpg" alt="Headphones">
+                <h4>LENOVO CORE I7 11th gen</h4>
+                <p>R12 999.00</p>
+                <button onclick="addToCart('LENOVO CORE I7 11TH GEN 8GB RAM 256 SSD')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="/static/images/charger.jpg" alt="Smartwatch">
+                <h4>LAPTOP CHARGER</h4>
+                <p>R449.00</p>
+                <button onclick="addToCart('Laptop charger')">Add to Cart</button>
+            </div>
+        </section>
+
+        <div class="cart">
+            <button onclick="viewCart()">View Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Napster Tech. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const cart = [];
+
+        function addToCart(product) {
+            cart.push(product);
+            alert(product + " has been added to your cart!");
+        }
+
+        function viewCart() {
+            if (cart.length === 0) {
+                alert("Your cart is empty.");
+            } else {
+                alert("Items in your cart: \n" + cart.join(", "));
+            }
+        }
+    </script>
+
+</body>
+
+</html>
